@@ -1,0 +1,119 @@
+@import "libs/global.scss";
+@import "libs/menu.scss";
+
+.container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  $cd-primary-color:#579c87;
+
+  header {
+      background-color: $cd-primary-color;
+      width: 100%;
+      height: 100px;
+      display: flex;
+      
+      img{
+        height: 43px;
+        margin: 32px;
+        margin-left: 315%;
+      }
+
+      .logo{
+        height: 43px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  /* navigations menus*/
+  nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+       display: inline-block;    
+       margin: auto;
+       margin-top: 32px;
+       width: 200px;
+       height: 282px; 
+      }
+       .nav__link__1{
+       background-color: #fcdfdb;
+      @include menu_mini;
+      }
+      .nav__link__2{
+        background-color: #fff5fe;
+        @include menu_mini;
+       }
+       .nav__link__3{
+        background-color: #eef0f0;
+        @include menu_mini;
+       }
+       .nav__link__4{
+        background-color: #fdfffd;
+        @include menu_mini;
+       }
+     }
+/* pages menus*/
+     .menu-1{
+      background-color: #fcdfdb;
+       @include menu;
+     }
+
+     .menu-2{
+      background-color: #fff5fe;
+      @include menu;
+    }
+
+    .menu-3{
+      background-color: #eef0f0;
+      @include menu;
+    }
+     .menu-4{
+      background-color: #fdfffd;
+      @include menu;
+     }
+/* pied page*/
+#prochainement {
+  background: $cd-primary-color;
+  border: 1px solid $cd-primary-color;
+  padding: 10px;
+  width: 15%;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 32px;
+}
+
+footer{
+  background-color: $cd-primary-color;
+}
+
+@media all and (max-width: 700px) {
+  body
+ {
+     width: auto;
+  }
+
+  header {
+    background-color: $cd-primary-color;
+    width: 100%;
+    height: 100px;
+    display: flex;
+
+    img{
+      height: 43px;
+      margin: 32px;
+      margin-left: 55%;
+    }
+    .logo{
+      height: 43px;
+    }
+  }
+}

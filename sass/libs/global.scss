@@ -1,0 +1,7 @@
+@mixin menu_mini {
+    box-shadow: 0 0 7px #dddddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
