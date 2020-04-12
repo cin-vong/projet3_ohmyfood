@@ -5,3 +5,25 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin font1 {
+    font-family: "Devonshire","Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+@mixin font2 {
+    font-family: "Croissant One";
+}
+
+@mixin font3 {
+    font-family: "parisienne";
+}
+
+@mixin font4 {
+    font-family: "Kaushan script";
+}
+
+@mixin mentions {
+    color:#fdcb46ff;
+    font-family: "roboto";
+    font-size: 1em;
+}
