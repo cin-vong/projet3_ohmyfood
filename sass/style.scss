@@ -10,6 +10,7 @@ a{
 }
 
   $cd-primary-color:#579c87;
+  $cd-font-color:#fdcb46ff;
 
   header {
       background-color: $cd-primary-color;
@@ -88,14 +89,15 @@ a{
       @include menu;
      }
 /* pied page*/
-.prochainement {
+#prochainement {
   background: $cd-primary-color;
   border: 1px solid $cd-primary-color;
-  color: #fdcb46ff;
+  color: $cd-font-color;
   padding: 10px;
   border-radius: 10px;
   margin: auto;
-  margin-top: 32px;
+  margin-bottom: 100px;
+  margin-top: 30px;
   font-family: "roboto";
   width: 258px;
   height: 46px;
@@ -106,19 +108,23 @@ a{
 
 footer{
   background-color: $cd-primary-color;
-  .mentions{
-    @include mentions;
-    margin-right: 5%;
-    margin-top: 1%;
-  }
-
-   .contact{
-    @include mentions;
-    margin-left: 70%;
-    margin-bottom: 10%;
-  }
 }
 
+.foot{
+    font-family: "roboto";
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    width: 100%;
+    height: 98px;
+    height: 12vmin;
+  .text{
+  color: $cd-font-color;
+  }
+}
 /* responsive*/
 
 @media all and (max-width: 700px) {
@@ -130,7 +136,7 @@ footer{
   header {
     background-color: $cd-primary-color;
     width: 100%;
-    height: 100px;
+    height: 100%;
     display: flex;
 
     img{
