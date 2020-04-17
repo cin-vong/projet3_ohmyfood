@@ -1,15 +1,32 @@
 @mixin menu {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    font-size: 1.5em;
+    margin: 150px 0 -130px 0 ;
+}
+
+@mixin menu_mini {
     box-shadow: 0 0 7px #dddddd;
-    margin-bottom: 80px;
-    padding-bottom: 65px;
-    max-width: 518px;
-    padding-left: 10%;
-    padding-right: 10%;
-    min-height: 890px;
-    margin-left: 390px;
-    margin-top: 180px;
+    width: 280px;
+    height: 400px;
+    
+}
+
+@mixin menu_max {
+    box-shadow: 0 0 7px #dddddd;
+    width: 800px;
+    height: 250px;
+    margin-left: 400px;
+}
+
+@mixin menu_bigtypo {
+    justify-content: center;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+@mixin smartmenu {
+    width: 320px;
+    height: 250px;
+    margin-left: 20px;
 }
