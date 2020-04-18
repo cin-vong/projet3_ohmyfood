@@ -35,12 +35,11 @@ a{
 
       .notemusic{
         margin:auto;
-      padding: 40px;
+        padding: 40px;
       }
     }
   /* navigations menus*/
-    
-
+  
   nav {
     ul {
       padding: 0;
@@ -55,8 +54,7 @@ a{
        margin: 55px;
        width: 200px;
        height: 282px; 
-       text-align: center;
-       
+       text-align: center;    
       }
        .nav__link__1{
        background-color: #fcdfdb;
@@ -69,6 +67,7 @@ a{
         margin-left: 35%;
         margin-top: 30%;
       }
+      
     }
       .nav__link__2{
         background-color: #fff5fe;
@@ -145,16 +144,18 @@ a{
          color: #c67412;
             @include menu;
         } 
-     }
+      }
     }
 /* pages menus secondaires*/
      .menu-1{
       background-color: #fcdfdb; 
       list-style-type:none;
-      color: #3c1218;
       @include menu_bigtypo;
       @include smartmenu;
       @include font1;
+      .typo01{
+        color: #3c1218;
+    }
       .notemusic{
         width: 50px;       
       }
@@ -183,7 +184,7 @@ a{
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
-    }
+      }
     }
      .menu-4{
       background-color: #fdfffd;
@@ -197,6 +198,18 @@ a{
         color: transparent;
      }
     }
+
+/* Format menu*/
+
+.menu-content__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  img {
+  width: 24%;
+  margin: 40px 0 10px 0;
+  }
+} 
 
 /* pied page*/
 .prochainement {
@@ -250,6 +263,8 @@ footer{
   margin-top: 12px;
   }
 
+  /* animations*/
+
   .text:hover {
     animation: vibre 0.82s cubic-bezier(0.65, 0.23, 0.41, 0.79);
     transform: translate(0, 0);
@@ -276,11 +291,8 @@ footer{
     align-items: center;
     }
   }
-/* responsive ordi portable*/
 
-@media all and (min-width: 700px) {
-
-   .nav__link__1 {
+  .nav__link__1 {
     height: 100%;
     width: 100%;
     transition: transform 300ms, opacity 250ms 50ms;
@@ -319,6 +331,9 @@ footer{
     transform: scale(1.1);
     opacity: 0.5;
   }
+/* responsive ordi portable*/
+
+@media all and (min-width: 700px) {
 
   /* pages menus*/
 
@@ -326,17 +341,14 @@ footer{
     @include menu_max;
      }
 
-
   .menu-2{
    @include menu_max;
     }
  
-
   .menu-3{
     @include menu_max;
      }
    
-
    .menu-4{
     @include menu_max;
      }
