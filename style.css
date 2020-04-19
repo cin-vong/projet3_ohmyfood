@@ -189,13 +189,17 @@ nav .menu_vidaloka__1 {
   width: 320px;
   height: 2600px;
   margin-left: 20px;
-  font-family: "Devonshire", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Kalam", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial;
 }
 .menu-1 .typo01 {
   color: #3c1218;
 }
 .menu-1 .notemusic {
   width: 50px;
+}
+
+.devonshire {
+  font-family: "Devonshire", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 .menu-2 {
@@ -250,12 +254,31 @@ nav .menu_vidaloka__1 {
 }
 
 /* Format menu*/
-.menu-content__title {
+.menu-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 40px 0 10px 0;
 }
-.menu-content__title img {
+
+.title {
+  margin: 40px 0 10px 0;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 0;
+  transition: width 0.5s ease;
+}
+
+.title:hover::after {
+  width: 100%;
+  background: #000000;
+}
+
+img {
   width: 24%;
   margin: 40px 0 10px 0;
 }
@@ -381,6 +404,18 @@ footer {
   opacity: 0.5;
 }
 
+h3 {
+  font-family: "Kalam", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial;
+}
+
+h3::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 0;
+  transition: width 0.5s ease;
+}
+
 /* responsive ordi portable*/
 @media all and (min-width: 700px) {
   /* pages menus*/
@@ -388,28 +423,28 @@ footer {
     box-shadow: 0 0 7px #dddddd;
     width: 800px;
     height: 2050px;
-    margin-left: 400px;
+    margin-left: 260px;
   }
 
   .menu-2 {
     box-shadow: 0 0 7px #dddddd;
     width: 800px;
     height: 2050px;
-    margin-left: 400px;
+    margin-left: 260px;
   }
 
   .menu-3 {
     box-shadow: 0 0 7px #dddddd;
     width: 800px;
     height: 2050px;
-    margin-left: 400px;
+    margin-left: 260px;
   }
 
   .menu-4 {
     box-shadow: 0 0 7px #dddddd;
     width: 800px;
     height: 2050px;
-    margin-left: 400px;
+    margin-left: 260px;
   }
 }
 /* pied de page*/

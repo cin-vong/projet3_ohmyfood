@@ -152,13 +152,17 @@ a{
       list-style-type:none;
       @include menu_bigtypo;
       @include smartmenu;
-      @include font1;
+      @include kalam;
       .typo01{
         color: #3c1218;
     }
       .notemusic{
         width: 50px;       
       }
+     }
+
+     .devonshire{
+      @include font1;
      }
 
      .menu-2{
@@ -201,15 +205,33 @@ a{
 
 /* Format menu*/
 
-.menu-content__title {
+.menu-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 40px 0 10px 0;
+  } 
+
+  .title{
+    margin: 40px 0 10px 0;
+  }
+  .title::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    transition: width 0.5s ease;
+  }
+
+  .title:hover::after {
+    width: 100%;
+    background: #000000;
+  }
+
   img {
   width: 24%;
   margin: 40px 0 10px 0;
   }
-} 
 
 /* pied page*/
 .prochainement {
@@ -330,6 +352,17 @@ footer{
   .nav__link__4:hover {
     transform: scale(1.1);
     opacity: 0.5;
+  }
+
+  h3{
+    font-family: "Kalam", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial;
+  }
+  h3::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    transition: width 0.5s ease;
   }
 /* responsive ordi portable*/
 
