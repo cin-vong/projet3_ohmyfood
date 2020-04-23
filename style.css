@@ -53,21 +53,21 @@ nav .nav__link__1 {
   height: 400px;
   font-family: "Devonshire", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
-nav .nav__link__2 {
+nav .nav__link__1--2 {
   background-color: #fff5fe;
   box-shadow: 0 0 7px #dddddd;
   width: 280px;
   height: 400px;
   font-family: "Kurale";
 }
-nav .nav__link__3 {
+nav .nav__link__1--3 {
   background-color: #eef0f0;
   box-shadow: 0 0 7px #dddddd;
   width: 280px;
   height: 400px;
   font-family: "Dancing Script";
 }
-nav .nav__link__4 {
+nav .nav__link__1--4 {
   background-color: #fdfffd;
   box-shadow: 0 0 7px #dddddd;
   width: 280px;
@@ -95,7 +95,7 @@ nav .bloc-menu__2 {
   background: linear-gradient(to bottom right, #c67412, #6e4ccc);
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
   display: flex;
   justify-content: center;
   font-size: 1.5em;
@@ -105,7 +105,7 @@ nav .bloc-menu__3 {
   background: linear-gradient(to bottom right, #0431df, #0887fb);
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
   display: flex;
   justify-content: center;
   font-size: 1.5em;
@@ -115,7 +115,7 @@ nav .bloc-menu__4 {
   background: linear-gradient(to bottom right, #42973c, #bfff7e);
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
   display: flex;
   justify-content: center;
   font-size: 1.5em;
@@ -169,7 +169,7 @@ h2 {
 
 .prix {
   font-weight: bold;
-  margin-left: 80px;
+  margin-left: auto;
 }
 
 .menu-1 {
@@ -186,13 +186,6 @@ h2 {
 }
 .menu-1 .typo01 {
   color: #3c1218;
-}
-.menu-1 .notemusic {
-  width: 50px;
-}
-
-.devonshire {
-  font-family: "Devonshire", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 .menu-2 {
@@ -249,6 +242,14 @@ h2 {
   color: transparent;
 }
 
+.notemusic {
+  width: 50px;
+}
+
+.devonshire {
+  font-family: "Devonshire", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
 /* Format menu*/
 .menu-content {
   display: flex;
@@ -277,6 +278,14 @@ h2 {
 img {
   width: 24%;
   margin: 40px 0 10px 0;
+}
+
+/* Mentions*/
+.mentions {
+  max-width: 518px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-grow: 0;
 }
 
 /* pied page*/
@@ -324,12 +333,12 @@ footer {
   font-family: "roboto";
   display: flex;
   justify-content: space-around;
-  height: 10px;
+  height: 50px;
   /* animations*/
 }
 .foot .text {
   color: #fdcb46ff;
-  margin-top: 12px;
+  margin-top: 15px;
 }
 .foot .text:hover {
   animation: vibre 0.82s cubic-bezier(0.65, 0.23, 0.41, 0.79);
@@ -367,35 +376,35 @@ footer {
   opacity: 0.5;
 }
 
-.nav__link__2 {
+.nav__link__1--2 {
   height: 100%;
   width: 100%;
   transition: transform 300ms, opacity 250ms 50ms;
 }
 
-.nav__link__2:hover {
+.nav__link__1--2:hover {
   transform: scale(1.1);
   opacity: 0.5;
 }
 
-.nav__link__3 {
+.nav__link__1--3 {
   height: 100%;
   width: 100%;
   transition: transform 300ms, opacity 250ms 50ms;
 }
 
-.nav__link__3:hover {
+.nav__link__1--3:hover {
   transform: scale(1.1);
   opacity: 0.5;
 }
 
-.nav__link__4 {
+.nav__link__1--4 {
   height: 100%;
   width: 100%;
   transition: transform 300ms, opacity 250ms 50ms;
 }
 
-.nav__link__4:hover {
+.nav__link__1--4:hover {
   transform: scale(1.1);
   opacity: 0.5;
 }
@@ -415,50 +424,27 @@ h3::after {
 /* responsive ordi portable*/
 @media all and (min-width: 700px) {
   /* pages menus*/
-  .menu-1 {
+  div {
+    text-align: center;
+    /* pied de page*/
+  }
+  div .menu-1 .menu-2 .menu-3 .menu-4 {
     box-shadow: 0 0 7px #dddddd;
     width: 800px;
     max-width: 800px;
     margin: auto;
-    padding: 2em;
   }
-
-  .menu-2 {
-    box-shadow: 0 0 7px #dddddd;
-    width: 800px;
-    max-width: 800px;
-    margin: auto;
-    padding: 2em;
+  div .type__plats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
-
-  .menu-3 {
-    box-shadow: 0 0 7px #dddddd;
-    width: 800px;
-    max-width: 800px;
-    margin: auto;
-    padding: 2em;
+  div .foot {
+    height: 90px;
   }
-
-  .menu-4 {
-    box-shadow: 0 0 7px #dddddd;
-    width: 800px;
-    max-width: 800px;
-    margin: auto;
-    padding: 2em;
+  div .foot .text {
+    margin-top: 30px;
   }
-}
-.type__plats {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-/* pied de page*/
-.foot {
-  height: 90px;
-}
-.foot .text {
-  margin-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
