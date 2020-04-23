@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 @import "libs/global.scss";
 @import "libs/menu.scss";
 
@@ -43,11 +45,17 @@ a{
   nav {
     ul {
       padding: 0;
-      flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       list-style-type:none;
       margin: auto;
-      flex-direction: row;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
       max-width: 800px;
     }
     li {   
@@ -93,6 +101,8 @@ a{
         @include menu;
         }
         &__2{
+            background:  -webkit-gradient(linear, left top, right bottom, from(#c67412), to(#6e4ccc));
+            background:  -o-linear-gradient(top left, #c67412, #6e4ccc);
             background:  linear-gradient(to bottom right, #c67412, #6e4ccc);
               background-clip: text;
               -webkit-background-clip: text;
@@ -100,6 +110,8 @@ a{
             @include menu;
           }
           &__3{
+            background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
+            background: -o-linear-gradient(top left, #0431df, #0887fb);
             background: linear-gradient(to bottom right, #0431df, #0887fb);
             background-clip: text;
             -webkit-background-clip: text;
@@ -107,6 +119,8 @@ a{
             @include menu;
             }
             &__4{
+              background: -webkit-gradient(linear, left top, right bottom, from(#42973c), to(#bfff7e));
+              background: -o-linear-gradient(top left, #42973c, #bfff7e);
               background: linear-gradient(to bottom right, #42973c, #bfff7e);
               background-clip: text;
               -webkit-background-clip: text;
@@ -123,6 +137,8 @@ a{
         }
         &__3{
           @include menu;
+          background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
+          background: -o-linear-gradient(top left, #0431df, #0887fb);
           background: linear-gradient(to bottom right, #0431df, #0887fb);
           background-clip: text;
           -webkit-background-clip: text;
@@ -130,6 +146,8 @@ a{
         }
         &__4{
           @include menu;
+          background: -webkit-gradient(linear, left top, right bottom, from(#42973c), to(#bfff7e));
+          background: -o-linear-gradient(top left, #42973c, #bfff7e);
           background: linear-gradient(to bottom right, #42973c, #bfff7e);
           background-clip: text;
           -webkit-background-clip: text;
@@ -172,6 +190,8 @@ a{
       @include smartmenu;
       @include font2;
         .typo02{
+          background: -webkit-gradient(linear, left top, right bottom, from(#c67412), to(#6e4ccc));
+          background: -o-linear-gradient(top left, #c67412, #6e4ccc);
           background: linear-gradient(to bottom right, #c67412, #6e4ccc);
           background-clip: text;
           -webkit-background-clip: text;
@@ -185,6 +205,8 @@ a{
       @include smartmenu;
       @include font3;
       .typo03{
+        background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
+        background: -o-linear-gradient(top left, #0431df, #0887fb);
         background: linear-gradient(to bottom right, #0431df, #0887fb);
         background-clip: text;
         -webkit-background-clip: text;
@@ -197,6 +219,8 @@ a{
       @include smartmenu;
       @include font4;
       .typo04{
+        background: -webkit-gradient(linear, left top, right bottom, from(#42973c), to(#bfff7e));
+        background: -o-linear-gradient(top left, #42973c, #bfff7e);
         background: linear-gradient(to bottom right, #42973c, #bfff7e);
         background-clip: text;
         -webkit-background-clip: text;
@@ -215,9 +239,15 @@ a{
 /* Format menu*/
 
 .menu-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 40px 0 10px 0;
   } 
 
@@ -229,6 +259,8 @@ a{
     display: block;
     height: 1px;
     width: 0;
+    -webkit-transition: width 0.5s ease;
+    -o-transition: width 0.5s ease;
     transition: width 0.5s ease;
   }
 
@@ -248,7 +280,9 @@ a{
     max-width: 518px;
     margin-left: auto;
     margin-right: auto;
-    flex-grow: 0;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
   }
 
 /* pied page*/
@@ -268,7 +302,25 @@ a{
 
 .prochainement::after {
   content: " .";
-  animation: pointe 2s infinite;}
+  -webkit-animation: pointe 2s infinite;
+          animation: pointe 2s infinite;}
+
+@-webkit-keyframes pointe {
+  0%, 20% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  40% {
+    color: #fdcb46;
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  60% {
+    text-shadow: 0.25em 0 0 #fdcb46, 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0.25em 0 0 #fdcb46, 0.5em 0 0 #fdcb46;
+  }
+}
 
 @keyframes pointe {
   0%, 20% {
@@ -295,8 +347,11 @@ footer{
 
 .foot{
     font-family: "roboto";
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     height: 50px;
   .text{
   color: $cd-font-color;
@@ -306,69 +361,128 @@ footer{
   /* animations*/
 
   .text:hover {
-    animation: vibre 0.82s cubic-bezier(0.65, 0.23, 0.41, 0.79);
-    transform: translate(0, 0);
+    -webkit-animation: vibre 0.82s cubic-bezier(0.65, 0.23, 0.41, 0.79);
+            animation: vibre 0.82s cubic-bezier(0.65, 0.23, 0.41, 0.79);
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  
+  @-webkit-keyframes vibre {
+    0% {
+      -webkit-transform: translate(-1px, 0);
+              transform: translate(-1px, 0);
+    }
+    80% {
+      -webkit-transform: translate(2px, 0);
+              transform: translate(2px, 0);
+    }
+    30%, 50%, 70% {
+      -webkit-transform: translate(-4px, 0);
+              transform: translate(-4px, 0);
+    }
+    40%, 60% {
+      -webkit-transform: translate(4px, 0);
+              transform: translate(4px, 0);
+    }
   }
   
   @keyframes vibre {
     0% {
-      transform: translate(-1px, 0);
+      -webkit-transform: translate(-1px, 0);
+              transform: translate(-1px, 0);
     }
     80% {
-      transform: translate(2px, 0);
+      -webkit-transform: translate(2px, 0);
+              transform: translate(2px, 0);
     }
     30%, 50%, 70% {
-      transform: translate(-4px, 0);
+      -webkit-transform: translate(-4px, 0);
+              transform: translate(-4px, 0);
     }
     40%, 60% {
-      transform: translate(4px, 0);
+      -webkit-transform: translate(4px, 0);
+              transform: translate(4px, 0);
     }
   }
     .mentions{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     }
   }
 
   .nav__link__1 {
     height: 100%;
     width: 100%;
+    -webkit-transition: opacity 250ms 50ms, -webkit-transform 300ms;
+    transition: opacity 250ms 50ms, -webkit-transform 300ms;
+    -o-transition: transform 300ms, opacity 250ms 50ms;
     transition: transform 300ms, opacity 250ms 50ms;
+    transition: transform 300ms, opacity 250ms 50ms, -webkit-transform 300ms;
   }
   .nav__link__1:hover {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
     opacity: 0.5;
   }
 
   .nav__link__1--2 {
     height: 100%;
     width: 100%;
+    -webkit-transition: opacity 250ms 50ms, -webkit-transform 300ms;
+    transition: opacity 250ms 50ms, -webkit-transform 300ms;
+    -o-transition: transform 300ms, opacity 250ms 50ms;
     transition: transform 300ms, opacity 250ms 50ms;
+    transition: transform 300ms, opacity 250ms 50ms, -webkit-transform 300ms;
   }
   .nav__link__1--2:hover {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
     opacity: 0.5;
   }
 
   .nav__link__1--3 {
     height: 100%;
     width: 100%;
+    -webkit-transition: opacity 250ms 50ms, -webkit-transform 300ms;
+    transition: opacity 250ms 50ms, -webkit-transform 300ms;
+    -o-transition: transform 300ms, opacity 250ms 50ms;
     transition: transform 300ms, opacity 250ms 50ms;
+    transition: transform 300ms, opacity 250ms 50ms, -webkit-transform 300ms;
   }
   .nav__link__1--3:hover {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
     opacity: 0.5;
   }
 
   .nav__link__1--4 {
     height: 100%;
     width: 100%;
+    -webkit-transition: opacity 250ms 50ms, -webkit-transform 300ms;
+    transition: opacity 250ms 50ms, -webkit-transform 300ms;
+    -o-transition: transform 300ms, opacity 250ms 50ms;
     transition: transform 300ms, opacity 250ms 50ms;
+    transition: transform 300ms, opacity 250ms 50ms, -webkit-transform 300ms;
   }
   .nav__link__1--4:hover {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
     opacity: 0.5;
   }
 
@@ -380,6 +494,8 @@ footer{
     display: block;
     height: 1px;
     width: 0;
+    -webkit-transition: width 0.5s ease;
+    -o-transition: width 0.5s ease;
     transition: width 0.5s ease;
   }
 /* responsive ordi portable*/
@@ -399,9 +515,14 @@ div{
     }
   }
     .type__plats{
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
     } 
 
   /* pied de page*/
