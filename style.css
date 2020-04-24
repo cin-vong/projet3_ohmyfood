@@ -340,8 +340,7 @@ img {
   padding: 10px;
   border-radius: 10px;
   margin: auto;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 80px;
   text-align: center;
   font-family: "roboto";
   font-size: 1.5em;
@@ -399,6 +398,9 @@ footer {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   height: 50px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
   /* animations*/
 }
 .foot .text {
@@ -568,7 +570,7 @@ h3::after {
     justify-content: space-between;
   }
   div .foot {
-    height: 90px;
+    height: 10px;
   }
   div .foot .text {
     margin-top: 30px;

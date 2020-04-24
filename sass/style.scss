@@ -302,8 +302,7 @@ a{
   padding: 10px;
   border-radius: 10px;
   margin: auto;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 80px;
   text-align: center;
   font-family: "roboto";
   font-size: 1.5em;
@@ -353,6 +352,7 @@ a{
 
 footer{
   background-color: $cd-primary-color;
+  
 }
 
 .foot{
@@ -361,8 +361,11 @@ footer{
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     height: 50px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
   .text{
   color: $cd-font-color;
   margin-top: 15px;
@@ -536,13 +539,14 @@ div{
     } 
 
   /* pied de page*/
-  
+
   .foot{
-    height: 90px;
+    height: 10px;
     .text{
       margin-top: 30px;
       }
     } 
   } 
 }
+
       
