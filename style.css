@@ -1,5 +1,5 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
-/* responsive smart portable*/
+@charset "UTF-8";
+/* responsive téléphone portable*/
 body {
   margin: 0px;
 }
@@ -102,8 +102,9 @@ nav .bloc-menu__2 {
   background: -webkit-gradient(linear, left top, right bottom, from(#c67412), to(#6e4ccc));
   background: -o-linear-gradient(top left, #c67412, #6e4ccc);
   background: linear-gradient(to bottom right, #c67412, #6e4ccc);
-  background-clip: text;
+  background-clip: border-box;
   -webkit-background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
   display: flex;
   justify-content: center;
@@ -114,7 +115,7 @@ nav .bloc-menu__3 {
   background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
   background: -o-linear-gradient(top left, #0431df, #0887fb);
   background: linear-gradient(to bottom right, #0431df, #0887fb);
-  background-clip: text;
+  background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: flex;
@@ -126,7 +127,7 @@ nav .bloc-menu__4 {
   background: -webkit-gradient(linear, left top, right bottom, from(#42973c), to(#bfff7e));
   background: -o-linear-gradient(top left, #42973c, #bfff7e);
   background: linear-gradient(to bottom right, #42973c, #bfff7e);
-  background-clip: text;
+  background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: flex;
@@ -152,7 +153,7 @@ nav .menu_kalam__3 {
   background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
   background: -o-linear-gradient(top left, #0431df, #0887fb);
   background: linear-gradient(to bottom right, #0431df, #0887fb);
-  background-clip: text;
+  background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -164,7 +165,7 @@ nav .menu_kalam__4 {
   background: -webkit-gradient(linear, left top, right bottom, from(#42973c), to(#bfff7e));
   background: -o-linear-gradient(top left, #42973c, #bfff7e);
   background: linear-gradient(to bottom right, #42973c, #bfff7e);
-  background-clip: text;
+  background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -187,6 +188,12 @@ h2 {
 .prix {
   font-weight: bold;
   margin-left: auto;
+  margin-top: auto;
+  font-size: 1.6em;
+}
+
+.description {
+  font-size: 1.4em;
 }
 
 .menu-1 {
@@ -220,7 +227,7 @@ h2 {
   background: -webkit-gradient(linear, left top, right bottom, from(#c67412), to(#6e4ccc));
   background: -o-linear-gradient(top left, #c67412, #6e4ccc);
   background: linear-gradient(to bottom right, #c67412, #6e4ccc);
-  background-clip: text;
+  background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -240,7 +247,7 @@ h2 {
   background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
   background: -o-linear-gradient(top left, #0431df, #0887fb);
   background: linear-gradient(to bottom right, #0431df, #0887fb);
-  background-clip: text;
+  background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -260,7 +267,7 @@ h2 {
   background: -webkit-gradient(linear, left top, right bottom, from(#42973c), to(#bfff7e));
   background: -o-linear-gradient(top left, #42973c, #bfff7e);
   background: linear-gradient(to bottom right, #42973c, #bfff7e);
-  background-clip: text;
+  background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -289,6 +296,7 @@ h2 {
 
 .title {
   margin: 40px 0 10px 0;
+  font-size: 2.5em;
 }
 
 .title::after {
@@ -543,8 +551,6 @@ h3::after {
   }
   div .menu-1 .menu-2 .menu-3 .menu-4 {
     box-shadow: 0 0 7px #dddddd;
-    width: 800px;
-    max-width: 800px;
     margin: auto;
   }
   div .type__plats {

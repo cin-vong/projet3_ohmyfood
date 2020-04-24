@@ -1,9 +1,7 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
-
 @import "libs/global.scss";
 @import "libs/menu.scss";
 
-/* responsive smart portable*/
+/* responsive téléphone portable*/
 
 body {
   margin: 0px;
@@ -104,8 +102,9 @@ a{
             background:  -webkit-gradient(linear, left top, right bottom, from(#c67412), to(#6e4ccc));
             background:  -o-linear-gradient(top left, #c67412, #6e4ccc);
             background:  linear-gradient(to bottom right, #c67412, #6e4ccc);
-              background-clip: text;
-              -webkit-background-clip: text;
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            color: transparent;
               -webkit-text-fill-color: transparent;
             @include menu;
           }
@@ -113,7 +112,7 @@ a{
             background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
             background: -o-linear-gradient(top left, #0431df, #0887fb);
             background: linear-gradient(to bottom right, #0431df, #0887fb);
-            background-clip: text;
+            background-clip: border-box;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             @include menu;
@@ -122,7 +121,7 @@ a{
               background: -webkit-gradient(linear, left top, right bottom, from(#42973c), to(#bfff7e));
               background: -o-linear-gradient(top left, #42973c, #bfff7e);
               background: linear-gradient(to bottom right, #42973c, #bfff7e);
-              background-clip: text;
+              background-clip: border-box;
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
               @include menu;
@@ -140,7 +139,7 @@ a{
           background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
           background: -o-linear-gradient(top left, #0431df, #0887fb);
           background: linear-gradient(to bottom right, #0431df, #0887fb);
-          background-clip: text;
+          background-clip: border-box;
           -webkit-background-clip: text;
           color: transparent;
         }
@@ -149,7 +148,7 @@ a{
           background: -webkit-gradient(linear, left top, right bottom, from(#42973c), to(#bfff7e));
           background: -o-linear-gradient(top left, #42973c, #bfff7e);
           background: linear-gradient(to bottom right, #42973c, #bfff7e);
-          background-clip: text;
+          background-clip: border-box;
           -webkit-background-clip: text;
           color: transparent;
         }
@@ -171,6 +170,12 @@ a{
     .prix{
       font-weight: bold;
       margin-left: auto;
+      margin-top: auto;
+      font-size: 1.6em;
+    }
+
+    .description{
+      font-size: 1.4em;
     }
 
      .menu-1{
@@ -193,7 +198,7 @@ a{
           background: -webkit-gradient(linear, left top, right bottom, from(#c67412), to(#6e4ccc));
           background: -o-linear-gradient(top left, #c67412, #6e4ccc);
           background: linear-gradient(to bottom right, #c67412, #6e4ccc);
-          background-clip: text;
+          background-clip: border-box;
           -webkit-background-clip: text;
             color: transparent;
       }
@@ -208,7 +213,7 @@ a{
         background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
         background: -o-linear-gradient(top left, #0431df, #0887fb);
         background: linear-gradient(to bottom right, #0431df, #0887fb);
-        background-clip: text;
+        background-clip: border-box;
         -webkit-background-clip: text;
         color: transparent;
       }
@@ -222,7 +227,7 @@ a{
         background: -webkit-gradient(linear, left top, right bottom, from(#42973c), to(#bfff7e));
         background: -o-linear-gradient(top left, #42973c, #bfff7e);
         background: linear-gradient(to bottom right, #42973c, #bfff7e);
-        background-clip: text;
+        background-clip: border-box;
         -webkit-background-clip: text;
         color: transparent;
      }
@@ -253,6 +258,7 @@ a{
 
   .title{
     margin: 40px 0 10px 0;
+    font-size: 2.5em;
   }
   .title::after {
     content: "";
