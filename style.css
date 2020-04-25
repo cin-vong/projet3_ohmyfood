@@ -170,8 +170,15 @@ nav .menu_vidaloka__1 {
   box-shadow: 0 0 7px #dddddd;
 }
 
+.bart {
+  width: 20px;
+  height: 10px;
+  text-align: center;
+}
+
 h2 {
   font-size: 2em;
+  text-align: center;
 }
 
 .prix {
@@ -182,7 +189,7 @@ h2 {
 }
 
 .description {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .menu-1 {
@@ -480,6 +487,10 @@ h3::after {
   }
   div .description {
     font-size: 1.5em;
+  }
+  div .bart {
+    width: 450px;
+    height: 20px;
   }
   div .foot {
     height: 10px;

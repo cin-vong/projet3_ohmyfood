@@ -198,8 +198,15 @@ a{
   box-shadow: 0 0 7px #dddddd;
 }
 
+.bart{
+  width: 20px;
+  height: 10px;
+  text-align: center;
+}
+
     h2{
       font-size: 2.0em;
+      text-align: center;
     }
 
     .prix{
@@ -210,7 +217,7 @@ a{
     }
 
     .description{
-      font-size: 2.0em;
+      font-size: 1.5em;
     }
 
      .menu-1{
@@ -503,6 +510,7 @@ footer{
 @media all and (min-width: 700px) {
 
   /* pages menus*/
+
 div{
   text-align: center;
   .menu-1{
@@ -529,6 +537,11 @@ div{
       font-size: 1.5em;
     }
 
+    .bart{
+      width: 450px;
+      height: 20px;
+    }
+    
 
   /* pied de page*/
 
