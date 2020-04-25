@@ -3,11 +3,6 @@
 
 /* responsive téléphone portable*/
 
-a:active
-{
-   outline:none;
-}
-
 body {
   margin: 0px;
   display: flex;
@@ -17,6 +12,7 @@ body {
 
 a{
   text-decoration:none;
+  outline:none;
 }
 
 .container{
