@@ -63,6 +63,7 @@ nav .nav__link__1 {
   box-shadow: 0 0 7px #dddddd;
   width: 280px;
   height: 400px;
+  display: flex;
   font-family: "Devonshire", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   overflow: hidden;
 }
@@ -71,6 +72,7 @@ nav .nav__link__1--2 {
   box-shadow: 0 0 7px #dddddd;
   width: 280px;
   height: 400px;
+  display: flex;
   font-family: "Kurale";
 }
 nav .nav__link__1--3 {
@@ -78,6 +80,7 @@ nav .nav__link__1--3 {
   box-shadow: 0 0 7px #dddddd;
   width: 280px;
   height: 400px;
+  display: flex;
   font-family: "Dancing Script";
 }
 nav .nav__link__1--4 {
@@ -85,6 +88,7 @@ nav .nav__link__1--4 {
   box-shadow: 0 0 7px #dddddd;
   width: 280px;
   height: 400px;
+  display: flex;
   font-family: "Kaushan script";
 }
 nav .note {

@@ -9,6 +9,7 @@
     box-shadow: 0 0 7px #dddddd;
     width: 280px;
     height: 400px;
+    display: flex;
 }
 
 @mixin menu_max {
