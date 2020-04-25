@@ -36,6 +36,20 @@ header .notemusic {
 }
 
 /* navigations menus*/
+.menu_mini, nav .nav__link__1--4, nav .nav__link__1--3, nav .nav__link__1--2, nav .nav__link__1 {
+  box-shadow: 0 0 7px #dddddd;
+  width: 280px;
+  height: 400px;
+  display: flex;
+}
+
+.menu, nav .menu_vidaloka__1, nav .menu_kalam__4, nav .menu_kalam__3, nav .menu_kalam__1, nav .bloc-menu__4, nav .bloc-menu__3, nav .bloc-menu__2, nav .bloc-menu__1, nav .note {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  margin: 150px 0 -130px 0;
+}
+
 nav ul {
   padding: 0;
   -ms-flex-wrap: wrap;
@@ -60,53 +74,29 @@ nav li {
 }
 nav .nav__link__1 {
   background-color: #fcdfdb;
-  box-shadow: 0 0 7px #dddddd;
-  width: 280px;
-  height: 400px;
-  display: flex;
   font-family: "Devonshire", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   overflow: hidden;
 }
 nav .nav__link__1--2 {
   background-color: #fff5fe;
-  box-shadow: 0 0 7px #dddddd;
-  width: 280px;
-  height: 400px;
-  display: flex;
   font-family: "Kurale";
 }
 nav .nav__link__1--3 {
   background-color: #eef0f0;
-  box-shadow: 0 0 7px #dddddd;
-  width: 280px;
-  height: 400px;
-  display: flex;
   font-family: "Dancing Script";
 }
 nav .nav__link__1--4 {
   background-color: #fdfffd;
-  box-shadow: 0 0 7px #dddddd;
-  width: 280px;
-  height: 400px;
-  display: flex;
   font-family: "Kaushan script";
 }
 nav .note {
   text-align: center;
   width: 80px;
-  display: flex;
-  justify-content: center;
-  font-size: 1.5em;
-  margin: 150px 0 -130px 0;
   margin-left: 35%;
   margin-top: 30%;
 }
 nav .bloc-menu__1 {
   color: #3c1218;
-  display: flex;
-  justify-content: center;
-  font-size: 1.5em;
-  margin: 150px 0 -130px 0;
 }
 nav .bloc-menu__2 {
   background: -webkit-gradient(linear, left top, right bottom, from(#c67412), to(#6e4ccc));
@@ -116,10 +106,6 @@ nav .bloc-menu__2 {
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  display: flex;
-  justify-content: center;
-  font-size: 1.5em;
-  margin: 150px 0 -130px 0;
 }
 nav .bloc-menu__3 {
   background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
@@ -128,10 +114,6 @@ nav .bloc-menu__3 {
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: flex;
-  justify-content: center;
-  font-size: 1.5em;
-  margin: 150px 0 -130px 0;
 }
 nav .bloc-menu__4 {
   background: -webkit-gradient(linear, left top, right bottom, from(#42973c), to(#bfff7e));
@@ -140,26 +122,14 @@ nav .bloc-menu__4 {
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: flex;
-  justify-content: center;
-  font-size: 1.5em;
-  margin: 150px 0 -130px 0;
 }
 nav .menu_kalam {
   font-family: "Kalam", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial;
 }
 nav .menu_kalam__1 {
-  display: flex;
-  justify-content: center;
-  font-size: 1.5em;
-  margin: 150px 0 -130px 0;
   color: #3c1218;
 }
 nav .menu_kalam__3 {
-  display: flex;
-  justify-content: center;
-  font-size: 1.5em;
-  margin: 150px 0 -130px 0;
   background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
   background: -o-linear-gradient(top left, #0431df, #0887fb);
   background: linear-gradient(to bottom right, #0431df, #0887fb);
@@ -168,10 +138,6 @@ nav .menu_kalam__3 {
   color: transparent;
 }
 nav .menu_kalam__4 {
-  display: flex;
-  justify-content: center;
-  font-size: 1.5em;
-  margin: 150px 0 -130px 0;
   background: -webkit-gradient(linear, left top, right bottom, from(#42973c), to(#bfff7e));
   background: -o-linear-gradient(top left, #42973c, #bfff7e);
   background: linear-gradient(to bottom right, #42973c, #bfff7e);
@@ -184,15 +150,28 @@ nav .menu_vidaloka {
 }
 nav .menu_vidaloka__1 {
   color: #c67412;
-  display: flex;
-  justify-content: center;
-  font-size: 1.5em;
-  margin: 150px 0 -130px 0;
 }
 
 /* pages menus secondaires*/
+.menu_bigtypo, .menu-4, .menu-3, .menu-2, .menu-1 {
+  justify-content: center;
+  text-align: center;
+}
+
+.smartmenu, .menu-4, .menu-3, .menu-2, .menu-1 {
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-left: -80px;
+  margin-top: 40px;
+  padding: 2em;
+  padding-left: 5em;
+  padding-right: 5em;
+  box-shadow: 0 0 7px #dddddd;
+}
+
 h2 {
-  font-size: 2.8em;
+  font-size: 2em;
 }
 
 .prix {
@@ -203,19 +182,12 @@ h2 {
 }
 
 .description {
-  font-size: 1em;
+  font-size: 2em;
 }
 
 .menu-1 {
   background-color: #fcdfdb;
   list-style-type: none;
-  justify-content: center;
-  text-align: center;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2em;
-  box-shadow: 0 0 7px #dddddd;
   font-family: "Kalam", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial;
 }
 .menu-1 .typo01 {
@@ -224,13 +196,6 @@ h2 {
 
 .menu-2 {
   background-color: #fff5fe;
-  justify-content: center;
-  text-align: center;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2em;
-  box-shadow: 0 0 7px #dddddd;
   font-family: "Kurale";
 }
 .menu-2 .typo02 {
@@ -244,13 +209,6 @@ h2 {
 
 .menu-3 {
   background-color: #eef0f0;
-  justify-content: center;
-  text-align: center;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2em;
-  box-shadow: 0 0 7px #dddddd;
   font-family: "Dancing Script";
 }
 .menu-3 .typo03 {
@@ -264,13 +222,6 @@ h2 {
 
 .menu-4 {
   background-color: #fdfffd;
-  justify-content: center;
-  text-align: center;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2em;
-  box-shadow: 0 0 7px #dddddd;
   font-family: "Kaushan script";
 }
 .menu-4 .typo04 {
@@ -394,6 +345,7 @@ img {
 /* pied de page*/
 footer {
   background-color: #579c87;
+  min-width: 268px;
   position: fixed;
   width: 100%;
   bottom: 0;

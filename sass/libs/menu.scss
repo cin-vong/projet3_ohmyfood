@@ -1,34 +1,6 @@
-@mixin menu {
-    display: flex;
-    justify-content: center;
-    font-size: 1.5em;
-    margin: 150px 0 -130px 0 ;
-}
-
-@mixin menu_mini {
-    box-shadow: 0 0 7px #dddddd;
-    width: 280px;
-    height: 400px;
-    display: flex;
-}
-
 @mixin menu_max {
     box-shadow: 0 0 7px #dddddd;
     margin:auto;
-}
-
-@mixin menu_bigtypo {
-    justify-content: center;
-    text-align: center;
-}
-
-@mixin smartmenu {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2em;
-    box-shadow: 0 0 7px #dddddd;
-   
 }
 
 @mixin bigmenu {
