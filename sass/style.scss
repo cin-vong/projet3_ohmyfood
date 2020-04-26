@@ -85,7 +85,7 @@ a{
        background-color: #fcdfdb;
        @extend .menu_mini;
        @include font1;
-       overflow: hidden;
+    
       
       &--2{
         background-color: #fff5fe;
@@ -198,11 +198,6 @@ a{
   box-shadow: 0 0 7px #dddddd;
 }
 
-.bart{
-  width: 20px;
-  height: 10px;
-  text-align: center;
-}
 
     h2{
       font-size: 2.0em;

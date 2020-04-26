@@ -75,7 +75,6 @@ nav li {
 nav .nav__link__1 {
   background-color: #fcdfdb;
   font-family: "Devonshire", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  overflow: hidden;
 }
 nav .nav__link__1--2 {
   background-color: #fff5fe;
@@ -168,12 +167,6 @@ nav .menu_vidaloka__1 {
   padding-left: 5em;
   padding-right: 5em;
   box-shadow: 0 0 7px #dddddd;
-}
-
-.bart {
-  width: 20px;
-  height: 10px;
-  text-align: center;
 }
 
 h2 {
