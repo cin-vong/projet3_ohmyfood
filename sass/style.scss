@@ -118,31 +118,25 @@ a{
         @extend.menu;
         }
         &__2{
-            background:  -webkit-gradient(linear, left top, right bottom, from(#c67412), to(#6e4ccc));
-            background:  -o-linear-gradient(top left, #c67412, #6e4ccc);
             background:  linear-gradient(to bottom right, #c67412, #6e4ccc);
             background-clip: border-box;
             -webkit-background-clip: text;
             color: transparent;
-              -webkit-text-fill-color: transparent;
               @extend.menu;
           }
           &__3{
-            background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
-            background: -o-linear-gradient(top left, #0431df, #0887fb);
             background: linear-gradient(to bottom right, #0431df, #0887fb);
             background-clip: border-box;
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: transparent;
             @extend.menu;
             }
             &__4{
-              background: -webkit-gradient(linear, left top, right bottom, from(#42973c), to(#bfff7e));
-              background: -o-linear-gradient(top left, #42973c, #bfff7e);
               background: linear-gradient(to bottom right, #42973c, #bfff7e);
               background-clip: border-box;
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
+              color: transparent;
               @extend.menu;
               }
        }
@@ -155,8 +149,6 @@ a{
         }
         &__3{
           @extend.menu;
-          background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
-          background: -o-linear-gradient(top left, #0431df, #0887fb);
           background: linear-gradient(to bottom right, #0431df, #0887fb);
           background-clip: border-box;
           -webkit-background-clip: text;
@@ -164,8 +156,6 @@ a{
         }
         &__4{
           @extend.menu;
-          background: -webkit-gradient(linear, left top, right bottom, from(#42973c), to(#bfff7e));
-          background: -o-linear-gradient(top left, #42973c, #bfff7e);
           background: linear-gradient(to bottom right, #42973c, #bfff7e);
           background-clip: border-box;
           -webkit-background-clip: text;
@@ -232,8 +222,6 @@ a{
       @extend .smartmenu;
       @include font2;
         .typo02{
-          background: -webkit-gradient(linear, left top, right bottom, from(#c67412), to(#6e4ccc));
-          background: -o-linear-gradient(top left, #c67412, #6e4ccc);
           background: linear-gradient(to bottom right, #c67412, #6e4ccc);
           background-clip: border-box;
           -webkit-background-clip: text;
@@ -247,8 +235,6 @@ a{
       @extend .smartmenu;
       @include font3;
       .typo03{
-        background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
-        background: -o-linear-gradient(top left, #0431df, #0887fb);
         background: linear-gradient(to bottom right, #0431df, #0887fb);
         background-clip: border-box;
         -webkit-background-clip: text;
@@ -261,8 +247,6 @@ a{
       @extend .smartmenu;
       @include font4;
       .typo04{
-        background: -webkit-gradient(linear, left top, right bottom, from(#42973c), to(#bfff7e));
-        background: -o-linear-gradient(top left, #42973c, #bfff7e);
         background: linear-gradient(to bottom right, #42973c, #bfff7e);
         background-clip: border-box;
         -webkit-background-clip: text;

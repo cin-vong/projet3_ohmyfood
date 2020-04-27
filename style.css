@@ -98,29 +98,23 @@ nav .bloc-menu__1 {
   color: #3c1218;
 }
 nav .bloc-menu__2 {
-  background: -webkit-gradient(linear, left top, right bottom, from(#c67412), to(#6e4ccc));
-  background: -o-linear-gradient(top left, #c67412, #6e4ccc);
   background: linear-gradient(to bottom right, #c67412, #6e4ccc);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
-  -webkit-text-fill-color: transparent;
 }
 nav .bloc-menu__3 {
-  background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
-  background: -o-linear-gradient(top left, #0431df, #0887fb);
   background: linear-gradient(to bottom right, #0431df, #0887fb);
   background-clip: border-box;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 nav .bloc-menu__4 {
-  background: -webkit-gradient(linear, left top, right bottom, from(#42973c), to(#bfff7e));
-  background: -o-linear-gradient(top left, #42973c, #bfff7e);
   background: linear-gradient(to bottom right, #42973c, #bfff7e);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 nav .menu_kalam {
   font-family: "Kalam", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial;
@@ -129,16 +123,12 @@ nav .menu_kalam__1 {
   color: #3c1218;
 }
 nav .menu_kalam__3 {
-  background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
-  background: -o-linear-gradient(top left, #0431df, #0887fb);
   background: linear-gradient(to bottom right, #0431df, #0887fb);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
 }
 nav .menu_kalam__4 {
-  background: -webkit-gradient(linear, left top, right bottom, from(#42973c), to(#bfff7e));
-  background: -o-linear-gradient(top left, #42973c, #bfff7e);
   background: linear-gradient(to bottom right, #42973c, #bfff7e);
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -199,8 +189,6 @@ h2 {
   font-family: "Kurale";
 }
 .menu-2 .typo02 {
-  background: -webkit-gradient(linear, left top, right bottom, from(#c67412), to(#6e4ccc));
-  background: -o-linear-gradient(top left, #c67412, #6e4ccc);
   background: linear-gradient(to bottom right, #c67412, #6e4ccc);
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -212,8 +200,6 @@ h2 {
   font-family: "Dancing Script";
 }
 .menu-3 .typo03 {
-  background: -webkit-gradient(linear, left top, right bottom, from(#0431df), to(#0887fb));
-  background: -o-linear-gradient(top left, #0431df, #0887fb);
   background: linear-gradient(to bottom right, #0431df, #0887fb);
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -225,8 +211,6 @@ h2 {
   font-family: "Kaushan script";
 }
 .menu-4 .typo04 {
-  background: -webkit-gradient(linear, left top, right bottom, from(#42973c), to(#bfff7e));
-  background: -o-linear-gradient(top left, #42973c, #bfff7e);
   background: linear-gradient(to bottom right, #42973c, #bfff7e);
   background-clip: border-box;
   -webkit-background-clip: text;
